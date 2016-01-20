@@ -1,0 +1,19 @@
+# options
+#  -l 		Langage		{eng,jpn,sub,dub}	 can be abrevated ex.  -l e
+#  -fb		Fall Back from Dub to Sub if no Dub
+#  -fq		Force Quality (Some times 1080p exists but the site does not mention it)
+#  -q 		Quality		{best,1080,720,480}	best can be abrevated ex. -q b
+#
+# ex. http://www.funimation.com/shows/a-certain-magical-index/videos/official/academy-city -l j
+# 
+# options can be made global they stay untill set again
+# ex.
+# -g -l e
+# http://www.funimation.com/shows/a-certain-magical-index/videos/official/academy-city
+# http://www.funimation.com/shows/a-certain-magical-index/videos/official/innocentius-the-witch-hunter-king
+# -g -l j
+# http://www.funimation.com/shows/gonna-be-the-twin-tail/videos/official/earth-is-a-twin-tail-world
+# 
+# to clear use "-g "
+#
+http://www.funimation.com/shows/tokyo-ravens/videos/official/shaman-clan--promise-
