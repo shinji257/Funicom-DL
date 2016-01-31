@@ -1,21 +1,3 @@
-@ECHO OFF
-REM BFCPEOPTIONSTART
-REM Advanced BAT to EXE Converter www.BatToExeConverter.com
-REM BFCPEEXE=C:\Users\ajakethompson\Desktop\2\DEV\Funicom-DL.3.3\Direct.py\Funicom-DL.manual.direct.py.write.que.exe
-REM BFCPEICON=C:\Users\ajakethompson\Desktop\2\Funcom-DL.ico
-REM BFCPEICONINDEX=-1
-REM BFCPEEMBEDDISPLAY=0
-REM BFCPEEMBEDDELETE=1
-REM BFCPEADMINEXE=0
-REM BFCPEINVISEXE=0
-REM BFCPEVERINCLUDE=1
-REM BFCPEVERVERSION=1.0.0.0
-REM BFCPEVERPRODUCT=PNDL Funi-DL Manual Direct py write que
-REM BFCPEVERDESC=PNDL Funi-DL Manual Direct py write que
-REM BFCPEVERCOMPANY=Pikanetwork
-REM BFCPEVERCOPYRIGHT=2014 Pikanetwork
-REM BFCPEOPTIONEND
-@ECHO ON
 @echo off
 CD /D %~dp0
 if not exist "Funicom-DL_Manual.txt" call :CLI
@@ -185,7 +167,7 @@ For /L %%A in (%begin%,1,%end%) do call :pro %%A
 set epi=%~1
 if %epi% LSS 10 set epi=0%epi%
 if %epi% LSS 100 set epi=0%epi%
-echo http://wpc.8c48.edgecastcdn.net/008C48/SV/480/%show%%lang%%prefix%%epi%/%show%%lang%%prefix%%epi%-480-%bit%.mp4/%show%%lang%%prefix%%epi%-%def%-%bit%.mp4>>"Funicom-DL.manual.direct.py.que"
+echo %show%%lang%%prefix%%epi%-%def%-%bit%>>"Funicom-DL.manual.direct.py.que"
 goto :EOF
 
 :CLI

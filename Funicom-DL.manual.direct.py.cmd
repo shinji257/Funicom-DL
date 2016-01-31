@@ -6,7 +6,7 @@ goto :eof
 :pro
 mkdir tmp
 cd tmp
-"..\Funicom-DL.manual.direct.pyc" "%~1"
+"..\Funicom-DL.manual.direct.py" "%~1"
 cd ..
 rd /S /Q tmp
 goto :EOF
