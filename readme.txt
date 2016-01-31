@@ -19,6 +19,9 @@ add urls to the que then run the bat
 
 Funicom-DL Pre 4.0 Dev Change Log:
 
+[Pn8] Funicom-DL dev 2015-08-03T14_52_00 PST
+	added bitrate mod to main program
+
 [Pn8] Funicom-DL dev 2015-08-02T09_32_00 PST
 	using new filename style
 	fixed a personal secrity issue (i wont tell you what it is but it never affected you)
