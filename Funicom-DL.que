@@ -8,11 +8,11 @@
 # 
 # options can be made global they stay untill set again
 # ex.
-# -g -l e
+# -G -l e
 # http://www.funimation.com/shows/a-certain-magical-index/videos/official/academy-city
 # http://www.funimation.com/shows/a-certain-magical-index/videos/official/innocentius-the-witch-hunter-king
-# -g -l j
+# -G -l j
 # http://www.funimation.com/shows/gonna-be-the-twin-tail/videos/official/earth-is-a-twin-tail-world
 # 
-# to clear use "-g "
+# to clear use "-G "
 #

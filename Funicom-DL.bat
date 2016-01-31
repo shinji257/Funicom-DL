@@ -14,7 +14,7 @@ if "%~1"=="--quit" goto exit
 if "%~1"=="-Q" del Funicom-DL.que.que
 if "%~1"=="-Q" exit
 if "%~1"=="--global" set G=%*
-if "%~1"=="--global" set G=%G:~2%
+if "%~1"=="--global" set G=%G:~8%
 if "%~1"=="--global" goto :EOF
 if "%~1"=="-G" set G=%*
 if "%~1"=="-G" set G=%G:~2%
@@ -29,7 +29,7 @@ if not exist "..\UserExcept.pyni" if exist "..\UserExcept.py.ini" copy "..\UserE
 if exist "..\PikaExcept.pycni" copy "..\PikaExcept.pycni" PikaExcept.pyc
 if not exist "..\PikaExcept.pycni" if exist "..\PikaExcept.pyni" copy "..\PikaExcept.pyni" PikaExcept.py
 if exist "..\Funicom-DL.pyc" Funicom-DL.pyc %* %g%
-if not exist "..\Funicom-DL.pyc" if exist "..\Funicom-DL.py" Funicom-DL.py %* %g%
+if not exist "..\Funicom-DL.pyc" if exist "..\Funicom-DL.py" Funicom-DL.py %* %g% 
 del cur.que
 cd ..
 RD /S /Q tmp

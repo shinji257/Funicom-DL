@@ -1,10 +1,24 @@
 Funicom-DL Pre 4.0 Dev Change Log:
 
+Funicom-DL.dev.2016-01-20T19_15_00.PST-Pikanet128
+	fixed it so --global works
+	fixed readme and que to say -G istead of -g
+	added info for the command -Q (--quit)
+
 Funicom-DL.dev.2016-01-15T18_11_00.PST-Pikanet128
 	lots happend i forget most of it
 	from now on my ver of the program is no differnt than yours
 	some new things
 	the dl screen tell you info
+	ex.
+		Downloading File:
+		    Time     = 1452911953
+		    Name     = SWRENGgolqdM0007-720-3500K.mp4
+		    Out Path = "C:\Users\ajakethompson\Downloads\TV Shows\Snow White with the R
+		               ed Hair\Snow White with the Red Hair\Snow White with the Red Hai
+		               r_ Se\"
+		    Out Name = "Snow White with the Red Hair; S01E07; null; 60297{Funicom-DL}no
+		               ne; (HD).mp4"
 	error.log now uses shortform urls and multi lines
 	ex.
 		funi.com/snow-white-with-the-red-hair/let-me-hear-the-melody-of-your-smile
