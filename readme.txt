@@ -1,0 +1,1 @@
+just replace PikaExcept.pyni in your Funicom-DL dir

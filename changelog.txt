@@ -1,0 +1,20 @@
+added exceptions for
+
+High School DxD
+Aria the Scarlet Ammo AA
+Seraph of the End: Battle in Nagoya
+
+
+fixed the exception for
+
+Noragami Aragoto
+
+
+added exception for
+
+Fairy Tail Zero
+set it as seperate show
+set the sort album to sort it in the right spot in whole show
+
+added sort album for all of Fairy Tail with padded zero because we will probably get past 9 seasons one day
+sort album would need to be updated in old eps for it to work right
