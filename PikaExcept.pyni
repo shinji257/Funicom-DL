@@ -27,15 +27,46 @@
 	# # there are also Sortnames they are by default blank
 	# # are used by a trailing s
 	# tags with sort are AR,AA,AL,SH
-	if inSH == 'selector':
-		if inSN == 1:
-			outAA = 'selector infected WIXOSS'
-			outSH = 'selector infected WIXOSS'
-			outSHs = 'selector'
-		elif inSN == 3:
-			outAA = 'selector spread WIXOSS'
-			outSH = 'selector spread WIXOSS'
-			outSHs = 'selector'
+	if inSH == 'Fairy Tail':
+		outALs = inSH+', Season 0'+str(inSN)
+		if BSNTI == 'Zero':
+			outAR = 'Fairy Tail'
+			outAA = 'Fairy Tail Zero'
+			outSH = 'Fairy Tail Zero'
+			outSHs = 'Fairy Tail'
+			outSN = 0
+			outAL = 'Fairy Tail Zero'
+			outALs = 'Fairy Tail, Season 07, Zero'
+	if inSH == 'Seraph of the End: Vampire Reign':
+		if inEN <= 12:
+			outAR = 'Seraph of the End'
+			outAA = 'Seraph of the End'
+			outSH = 'Seraph of the End: Vampire Reign'
+			outSHs = 'Seraph of the End'
+			outSN = 1
+			outAL = 'Seraph of the End, Season 1, Pt. 1'
+			outALs = 'Seraph of the End, Season 1'
+		if inEN > 12:
+			outAR = 'Seraph of the End'
+			outAA = 'Seraph of the End'
+			outSH = 'Seraph of the End: Battle in Nagoya'
+			outSHs = 'Seraph of the End'
+			outAL = 'Seraph of the End, Season 1, Pt. 2'
+			outALs = 'Seraph of the End, Season 1'
+	if inSH == 'Aria the Scarlet Ammo':
+		if BSNTI == 'AA':
+			outAA = 'Aria the Scarlet Ammo AA'
+			outSH = 'Aria the Scarlet Ammo AA'
+			outSHs = 'Aria the Scarlet Ammo'
+			outSN = 2
+			outAL = 'Aria the Scarlet Ammo, Season 2'
+	if inSH == 'Noragami':
+		if BSNTI == 'Aragoto':
+			outAA = 'Noragami Aragoto'
+			outSH = 'Noragami Aragoto'
+			outSHs = 'Noragami'
+			outSN = 2
+			outAL = 'Noragami, Season 2'
 	if inSH == 'High School DxD':
 		if inSN == 2:
 			outAA = 'High School DxD New'
@@ -55,13 +86,6 @@
 			outAA = 'selector spread WIXOSS'
 			outSH = 'selector spread WIXOSS'
 			outSHs = 'selector'
-	if inSH == 'Noragami':
-		if BSNTI == 'Aragato':
-			outAA = 'Noragami Aragato'
-			outSH = 'Noragami Aragato'
-			outSHs = 'Noragami'
-			outSN = '2'
-			outAL = 'Noragami, Season 2'
 	if inSH == 'Fafner':
 		if inSN == 1:
 			outAA = 'Fafner: Dead Aggressor'
@@ -76,16 +100,6 @@
 			outSHs = 'Fafner'
 			outSN = 2
 			outEN = 0
-	if inSH == 'selector':
-		if inSN == 1:
-			outAA = 'selector infected WIXOSS'
-			outSH = 'selector infected WIXOSS'
-			outSHs = 'selector'
-		elif inSN == 2:
-			outTI = re.sub('^spread - ','',inTI)
-			outAA = 'selector spread WIXOSS'
-			outSH = 'selector spread WIXOSS'
-			outSHs = 'selector'
 	if inSH == 'One Piece':
 		if inSN == 1:
 			if inNN <= 26:
