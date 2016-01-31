@@ -1,5 +1,13 @@
 Funicom-DL Pre 4.0 Dev Change Log:
 
+Funicom-DL.dev.2016-01-20T20_36_00.PST-Pikanet128
+	fixed the isuue with a bad substring for the check if outpath is an absoulte path
+
+Funicom-DL.dev.2016-01-20T20_15_00.PST-Pikanet128
+	fixed it so the ini does not need '..\\' to get out of the tmp folder
+	added -U and -R
+	gave you guys pywait as a bonus
+
 Funicom-DL.dev.2016-01-20T19_15_00.PST-Pikanet128
 	fixed it so --global works
 	fixed readme and que to say -G istead of -g

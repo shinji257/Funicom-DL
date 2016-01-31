@@ -31,26 +31,30 @@ can't help you on this as its not a problem for me
 
 Full Command list ~
 
--G  = --global        = set global cmds  = {any other cmds}                      ## must be instead of url
--Q  = --quit          = quit the program = {}                                    ## must be instead of url
--l  =                 = language         = {e,eng,j,jpn,d,dub,s,sub}             ## still working on trailer and clip support
--q  =                 = quality          = {b,best,1080,1080p,720,720p,480,480p} ## if left out best is default
-                                                                                 ## best could be 'be' or 'bes'
-                                                                                 ##   same with 'en', 'jp', 'du' or 'su'
--fb =                 = fall back        = {} use with '-l e'                    ## falls back from eng to jpn if no eng
--io =                 = info only        = {}                                    ## only grab the info files
--fq =                 = force quality    = {}                                    ## force the quality
-                                                                                 ## sometimes a vid is avalibale but
-                                                                                 ##   funi did not add it to the html
-                                                                                 ## don't use with 480p its useless
--fl =                 = force lang       = {} specify lang                       ## mostly for when dubs are just released and not
-                                                                                 ##   added to the html
-                                                                                 ##   does not work as much anymore
--b  =                 = pick bitrate     = {4000,3500,2500,2000,1500,1000,750}   ## this does not check if your resolution choice matches
-                                                                                 ##   ex. if you put -q 1080p -b 2000K
-                                                                                 ##   you will get 480p labled as 1080p
-                                                                                 ## can also have a "K" at the end
-                                                                                 ## ex. 2000K or 2000k
+-G  = --global        = set global cmds             = {any other cmds}                      ## must be instead of url
+-Q  = --quit          = quit the program            = {}                                    ## must be instead of url
+-U  = --uploader      = turns uploader mode on/off  = {True,False,On,Off,1,0,T,F}           ## will dl both 1080 and 720p
+-R  = --run           = runs cmd commands           = {True,False,On,Off,1,0,T,F}           ## -R start "" /Wait "%program%" starts a program
+                                                                                            ## -R pause pauses the que
+                                                                                            ## -R pywait 2s waits for 2 seconds
+-l  =                 = language                    = {e,eng,j,jpn,d,dub,s,sub}             ## still working on trailer and clip support
+-q  =                 = quality                     = {b,best,1080,1080p,720,720p,480,480p} ## if left out best is default
+                                                                                            ## best could be 'be' or 'bes'
+                                                                                            ##   same with 'en', 'jp', 'du' or 'su'
+-fb =                 = fall back                   = {} use with '-l e'                    ## falls back from eng to jpn if no eng
+-io =                 = info only                   = {}                                    ## only grab the info files
+-fq =                 = force quality               = {}                                    ## force the quality
+                                                                                            ## sometimes a vid is avalibale but
+                                                                                            ##   funi did not add it to the html
+                                                                                            ## don't use with 480p its useless
+-fl =                 = force lang                  = {} specify lang                       ## mostly for when dubs are just released and not
+                                                                                            ##   added to the html
+                                                                                            ##   does not work as much anymore
+-b  =                 = pick bitrate                = {4000,3500,2500,2000,1500,1000,750}   ## this does not check if your resolution choice matches
+                                                                                            ##   ex. if you put -q 1080p -b 2000K
+                                                                                            ##   you will get 480p labled as 1080p
+                                                                                            ## can also have a "K" at the end
+                                                                                            ## ex. 2000K or 2000k
 
 -------------------------------
 ex.

@@ -675,6 +675,8 @@ def prohtml ():
 	artist16 = artist[:16].strip()
 	exec("outFilename = " + nameformat)
 	exec("outpath = " + pathformat)
+	if outpath[1:2] != ':':
+		outpath = '..\\'+outpath
 	fileHandle = open ( str(int_Enum)+Dn_+'.funi.info', 'w' )
 	fileHandle.write(codecs.BOM_UTF8)
 	fileHandle.write((tag_title+';;; '+tag_description).encode('utf-8'))
