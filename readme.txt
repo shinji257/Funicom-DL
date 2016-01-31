@@ -19,6 +19,10 @@ add urls to the que then run the bat
 
 Funicom-DL Pre 4.0 Dev Change Log:
 
+[Pn8] Funicom-DL dev 2015-08-02T09_32_00 PST
+	using new filename style
+	fixed a personal secrity issue (i wont tell you what it is but it never affected you)
+	i changed nothing else, yet
 
 Funicom-DL.dev.2015-02-17T13_16_51.PST-Pikanet128
 	Added User and Pika Tag Exceptions
