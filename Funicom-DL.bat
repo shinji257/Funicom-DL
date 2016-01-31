@@ -20,8 +20,8 @@ if "%~1"=="-G" set G=%G:~2%
 if "%~1"=="-G" goto :EOF
 if not exist "tmp" MD "tmp"
 CD tmp
-if exist "..\Funicom-DL.pyc" copy "..\Funicom-DL.pyc" "Funicom-DL.pyc"
 if exist "..\Funicom-DL.py" copy "..\Funicom-DL.py" "Funicom-DL.py"
+if exist "..\Funicom-DL.pyc" copy "..\Funicom-DL.pyc" "Funicom-DL.pyc"
 echo %*>cur.que
 if exist "..\UserExcept.pyni" copy "..\UserExcept.pyni" UserExcept.py
 if not exist "..\UserExcept.pyni" if exist "..\UserExcept.py.ini" copy "..\UserExcept.py.ini" UserExcept.py

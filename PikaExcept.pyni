@@ -1,4 +1,4 @@
-﻿def PikaExceptions(inAR,inAA,inAL,inSH,inTI,inSN,inEN,inNN,inARs,inAAs,inALs,inSHs):
+﻿def PikaExceptions(inAR,inAA,inAL,inSH,inTI,inSN,inEN,inNN,inARs,inAAs,inALs,inSHs,BSNTI):
 	outAR = inAR
 	outAA = inAA
 	outAL = inAL
@@ -27,6 +27,41 @@
 	# # there are also Sortnames they are by default blank
 	# # are used by a trailing s
 	# tags with sort are AR,AA,AL,SH
+	if inSH == 'selector':
+		if inSN == 1:
+			outAA = 'selector infected WIXOSS'
+			outSH = 'selector infected WIXOSS'
+			outSHs = 'selector'
+		elif inSN == 3:
+			outAA = 'selector spread WIXOSS'
+			outSH = 'selector spread WIXOSS'
+			outSHs = 'selector'
+	if inSH == 'High School DxD':
+		if inSN == 2:
+			outAA = 'High School DxD New'
+			outSH = 'High School DxD New'
+			outSHs = 'High School DxD'
+		elif inSN == 3:
+			outAA = 'High School DxD BorN'
+			outSH = 'High School DxD BorN'
+			outSHs = 'High School DxD'
+	if inSH == 'selector':
+		if inSN == 1:
+			outAA = 'selector infected WIXOSS'
+			outSH = 'selector infected WIXOSS'
+			outSHs = 'selector'
+		elif inSN == 2:
+			outTI = re.sub('^spread - ','',inTI)
+			outAA = 'selector spread WIXOSS'
+			outSH = 'selector spread WIXOSS'
+			outSHs = 'selector'
+	if inSH == 'Noragami':
+		if BSNTI == 'Aragato':
+			outAA = 'Noragami Aragato'
+			outSH = 'Noragami Aragato'
+			outSHs = 'Noragami'
+			outSN = '2'
+			outAL = 'Noragami, Season 2'
 	if inSH == 'Fafner':
 		if inSN == 1:
 			outAA = 'Fafner: Dead Aggressor'

@@ -19,9 +19,17 @@ add urls to the que then run the bat
 
 Funicom-DL Pre 4.0 Dev Change Log:
 
+[Pn8] Funicom-DL dev 2015-10-02T11_04_00 PST
+	fixed the issue that first appeared with noragami Season 2
+	the season num is unable to be detected besause the season title was put as "Aragato" instaed of "Season 2"
+	so now it puts the sNum as "77"	and sets a var BADSeasonTitle to the value of the title
+	this can be referenced in the exceptions using BSNTI
+	i add the exception to the pikaexcept file the makes it Season "02" not "77"
+	the 77 is so if this happens again on another show we now what to fix
+
+	also no pyc anymore just a py
 [Pn8] Funicom-DL dev 2015-08-06T07_27_00 PST
 	fixed the pause issue
-
 
 [Pn8] Funicom-DL dev 2015-08-03T14_52_00 PST
 	added bitrate mod to main program

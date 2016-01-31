@@ -1,4 +1,4 @@
-﻿def UserExceptions(inAR,inAA,inAL,inSH,inTI,inSN,inEN,inNN,inARs,inAAs,inALs,inSHs):
+﻿def UserExceptions(inAR,inAA,inAL,inSH,inTI,inSN,inEN,inNN,inARs,inAAs,inALs,inSHs,BSNTI):
 	outAR = inAR
 	outAA = inAA
 	outAL = inAL
