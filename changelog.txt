@@ -1,5 +1,9 @@
 Funicom-DL Pre 4.0 Dev Change Log:
 
+Funicom-DL.dev.2016-02-03T18_37_00.PST-Pikanet128
+	added -S
+	added toggle to -U
+
 Funicom-DL.dev.2016-01-20T20_36_00.PST-Pikanet128
 	fixed the isuue with a bad substring for the check if outpath is an absoulte path
 

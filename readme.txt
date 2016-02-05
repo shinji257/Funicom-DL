@@ -33,8 +33,13 @@ Full Command list ~
 
 -G  = --global        = set global cmds             = {any other cmds}                      ## must be instead of url
 -Q  = --quit          = quit the program            = {}                                    ## must be instead of url
--U  = --uploader      = turns uploader mode on/off  = {True,False,On,Off,1,0,T,F}           ## will dl both 1080 and 720p
--R  = --run           = runs cmd commands           = {True,False,On,Off,1,0,T,F}           ## -R start "" /Wait "%program%" starts a program
+-S  = --skip          = starts or ends skip mode    = {True,False,On,Off,1,0,T,F,}          ## will ignore all lines till turned off (even -G,-Q,...)
+                                                                                            ## if no parameter is given it will toggle
+                                                                                            ##   first time you use will turn it on second off and third on again
+-U  = --uploader      = turns uploader mode on/off  = {True,False,On,Off,1,0,T,F,}          ## will dl both 1080 and 720p
+                                                                                            ## if no parameter is given it will toggle
+                                                                                            ##   first time you use will turn it on second off and third on again
+-R  = --run           = runs cmd commands           = {cmd commands}                        ## -R start "" /Wait "%program%" starts a program
                                                                                             ## -R pause pauses the que
                                                                                             ## -R pywait 2s waits for 2 seconds
 -l  =                 = language                    = {e,eng,j,jpn,d,dub,s,sub}             ## still working on trailer and clip support

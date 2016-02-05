@@ -17,12 +17,41 @@ if "%~1"=="" goto :EOF
 if "%~1"=="#" goto :EOF
 set i=%~1
 if "%i:~0,1%"=="#" goto :EOF
+if "%~1"=="--skip" if /I "%~2"=="" set t_s=
+if "%~1"=="--skip" if /I "%~2"=="" if "%s%"=="True" set t_s=False
+if "%~1"=="--skip" if /I "%~2"=="" if "%s%"=="False" set t_s=True
+if "%~1"=="--skip" if /I "%~2"=="" set s=%t_s%
+if "%~1"=="--skip" if /I "%~2"=="True" set s=True
+if "%~1"=="--skip" if /I "%~2"=="T" set s=True
+if "%~1"=="--skip" if /I "%~2"=="1" set s=True
+if "%~1"=="--skip" if /I "%~2"=="On" set s=True
+if "%~1"=="--skip" if /I "%~2"=="False" set s=False
+if "%~1"=="--skip" if /I "%~2"=="F" set s=False
+if "%~1"=="--skip" if /I "%~2"=="2" set s=False
+if "%~1"=="--skip" if /I "%~2"=="Off" set s=False
+if "%~1"=="-S" if /I "%~2"=="" set t_s=
+if "%~1"=="-S" if /I "%~2"=="" if "%s%"=="True" set t_s=False
+if "%~1"=="-S" if /I "%~2"=="" if "%s%"=="False" set t_s=True
+if "%~1"=="-S" if /I "%~2"=="" set s=%t_s%
+if "%~1"=="-S" if /I "%~2"=="True" set s=True
+if "%~1"=="-S" if /I "%~2"=="T" set s=True
+if "%~1"=="-S" if /I "%~2"=="1" set s=True
+if "%~1"=="-S" if /I "%~2"=="On" set s=True
+if "%~1"=="-S" if /I "%~2"=="False" set s=False
+if "%~1"=="-S" if /I "%~2"=="F" set s=False
+if "%~1"=="-S" if /I "%~2"=="2" set s=False
+if "%~1"=="-S" if /I "%~2"=="Off" set s=False
+if "%s%"=="True" goto :EOF
 if "%~1"=="--global" set g=%*
 if "%~1"=="--global" set g=%g:~8%
 if "%~1"=="--global" goto :EOF
 if "%~1"=="-G" set g=%*
 if "%~1"=="-G" set g=%g:~2%
 if "%~1"=="-G" goto :EOF
+if "%~1"=="--uploader" if /I "%~2"=="" set t_u=
+if "%~1"=="--uploader" if /I "%~2"=="" if "%u%"=="True" set t_u=False
+if "%~1"=="--uploader" if /I "%~2"=="" if "%u%"=="False" set t_u=True
+if "%~1"=="--uploader" if /I "%~2"=="" set u=%t_u%
 if "%~1"=="--uploader" if /I "%~2"=="True" set u=True
 if "%~1"=="--uploader" if /I "%~2"=="T" set u=True
 if "%~1"=="--uploader" if /I "%~2"=="1" set u=True
@@ -32,6 +61,10 @@ if "%~1"=="--uploader" if /I "%~2"=="F" set u=False
 if "%~1"=="--uploader" if /I "%~2"=="2" set u=False
 if "%~1"=="--uploader" if /I "%~2"=="Off" set u=False
 if "%~1"=="--uploader" goto :EOF
+if "%~1"=="-U" if /I "%~2"=="" set t_u=
+if "%~1"=="-U" if /I "%~2"=="" if "%u%"=="True" set t_u=False
+if "%~1"=="-U" if /I "%~2"=="" if "%u%"=="False" set t_u=True
+if "%~1"=="-U" if /I "%~2"=="" set u=%t_u%
 if "%~1"=="-U" if /I "%~2"=="True" set u=True
 if "%~1"=="-U" if /I "%~2"=="T" set u=True
 if "%~1"=="-U" if /I "%~2"=="1" set u=True
